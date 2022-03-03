@@ -4,8 +4,6 @@ Package Multifwn in docker
 
 ## Usage
 
-- noGUI Version
-
 ```sh
 $ docker run -dt \
     -v /path/to/Multiwfn_x.x_dev_bin_Linux_noGUI:/opt/Multiwfn_bin \
