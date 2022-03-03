@@ -8,7 +8,7 @@ Package Multifwn in docker
 
 ```sh
 $ docker run -dt \
-    -v /path/to/Multiwfn:/opt/Multiwfn_bin \
+    -v /path/to/Multiwfn_x.x_dev_bin_Linux_noGUI:/opt/Multiwfn_bin \
     -v /path/to/MultiwfnWorkspace:/opt/MultiwfnWorkspace
     multiwfn-no-gui
 ```
