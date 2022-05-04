@@ -1,0 +1,9 @@
+FROM mizubai/multiwfn:nogui
+
+LABEL maintainer="mizu-bai <shiragawa4519@outlook.com>"
+
+RUN apt update \
+	&& apt install -y libxm4 libgl1 --no-install-recommends \
+	&& rm -rf /var/lib/apt/lists/*
+
+WORKDIR /source 
