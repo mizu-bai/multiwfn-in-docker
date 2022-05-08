@@ -2,14 +2,13 @@ FROM ubuntu:bionic
 
 LABEL maintainer="mizu-bai <shiragawa4519@outlook.com>"
 
-ARG PROFILE="/etc/profile"
+ARG PROFILE="/root/.profile"
 
 ENV Multiwfnpath="/opt/Multiwfn_bin"
 ENV PATH="$Multiwfnpath:$PATH"
+ENV KMP_STACKSIZE=200M
 
 RUN set -x; mkdir -p ${Multiwfnpath} \
-    && echo "KMP_STACKSIZE=200M" >> ${PROFILE} \
-    && echo "ulimit -s unlimited" >> ${PROFILE} \
     && echo "kernel.shmmax=512000000" >> /etc/sysctl.conf
 
 WORKDIR /source 
