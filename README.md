@@ -9,7 +9,7 @@ Running Linux version Multiwfn in Docker.
 ### Without GUI
 
 ```sh
-$ docker push mizubai/multiwfn:nogui # optional
+$ docker pull mizubai/multiwfn:nogui # optional
 $ docker run -it --rm -v $(pwd):/source -v /path/to/Multiwfn_noGUI:/opt/Multiwfn_bin mizubai/multiwfn:gui Multiwfn
 ```
 
@@ -20,7 +20,7 @@ $ docker run -it --rm -v $(pwd):/source -v /path/to/Multiwfn_noGUI:/opt/Multiwfn
 3. Run
 
 ```sh
-$ docker push mizubai/multiwfn:gui # optional
+$ docker pull mizubai/multiwfn:gui # optional
 $ docker run -it --rm -v $(pwd):/source -v /path/to/Multiwfn:/opt/Multiwfn_bin -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=host.docker.internal:0 mizubai/multiwfn:gui Multiwfn
 ```
 
