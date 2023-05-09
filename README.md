@@ -26,7 +26,7 @@ $ docker run -it --rm -v $(pwd):/source -v /path/to/Multiwfn:/opt/Multiwfn_bin -
 
 ### Tips
 
-An alias may helps.
+You can define an alias.
 
 ```sh
 alias Multiwfn='docker run -it --rm -v $(pwd):/source -v /path/to/Multiwfn:/opt/Multiwfn_bin -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=host.docker.internal:0 mizubai/multiwfn:gui Multiwfn'
